@@ -1,0 +1,99 @@
+/////////////////////////////////////////////////////////////
+// HEADERS
+
+.header-1 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin: 2rem 0 3rem 0;
+}
+
+.header-2 {
+  color: $color-grey-dark-1;
+  font-style: italic;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.header-3 {
+  color: $color-primary;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header-4 {
+  color: $color-grey-dark-1;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.header-5 {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  &--home {
+    background-color: $color-secondary;
+    padding: 1.5rem 2rem;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 40%);
+  }
+  &--realtors {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+}
+
+/////////////////////////////////////////////////////////////
+// REALTORS
+
+.realtor-paragraph {
+  color: $color-grey-light-2;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/////////////////////////////////////////////////////////////
+// FEATURES
+
+.features__paragraph {
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  grid-column: 2 / span 1;
+}
+
+/////////////////////////////////////////////////////////////
+// STORY
+
+.story__paragraph {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/////////////////////////////////////////////////////////////
+// HOMES
+
+.home__card-paragraph {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/////////////////////////////////////////////////////////////
+// FOOTER
+
+.footer-paragraph {
+  color: $color-grey-light-2;
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-align: center;
+}

@@ -1,0 +1,150 @@
+/////////////////////////////////////////////////////////////
+// SIDEBAR
+
+.sidebar {
+  background-color: $color-primary;
+  grid-column: side-start / side-end;
+  grid-row: 1 / -1;
+
+  @media only screen and (max-width: $width-1000) {
+    grid-column: full-start / full-end;
+    grid-row: 1 / span 1;
+  }
+}
+
+/////////////////////////////////////////////////////////////
+// HEADER
+
+.title__container {
+  grid-column: full-start / col-end 6;
+
+  @media only screen and (max-width: $width-800) {
+    grid-column: full-start / full-end;
+    grid-row: 2 / span 1;
+  }
+}
+
+.top-realtors__container {
+  grid-column: col-start 7 / full-end;
+
+  @media only screen and (max-width: $width-800) {
+    grid-column: full-start / full-end;
+    grid-row: 3 / span 1;
+  }
+}
+
+/////////////////////////////////////////////////////////////
+// FEATURES
+
+.section__features {
+  grid-column: main-start / main-end;
+
+  @media only screen and (max-width: $width-1000) {
+    grid-row: 3 / span 1;
+  }
+
+  @media only screen and (max-width: $width-800) {
+    grid-row: 4 / span 1;
+  }
+}
+
+/////////////////////////////////////////////////////////////
+// ADVERTISEMENT
+
+.advertisement {
+  &__pictures {
+    grid-column: full-start / col-end 4;
+    grid-row: 3 / span 1;
+
+    @media only screen and (max-width: $width-1000) {
+      grid-column: full-start / full-end;
+      grid-row: 4 / span 1;
+    }
+
+    @media only screen and (max-width: $width-800) {
+      grid-row: 5 / span 1;
+    }
+
+    background-image: linear-gradient(
+        rgba($color-primary, 0.5),
+        (rgba($color-primary, 0.5))
+      ),
+      url(../img/back.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(min-content, 1fr));
+    grid-template-rows: repeat(6, minmax(min-content, 1fr));
+    padding-top: 2rem;
+  }
+
+  &__cite {
+    background-color: $color-grey-light-1;
+    grid-column: col-start 5 / full-end;
+    grid-row: 3 / span 1;
+
+    @media only screen and (max-width: $width-1000) {
+      grid-column: full-start / full-end;
+      grid-row: 5 / span 1;
+    }
+
+    @media only screen and (max-width: $width-800) {
+      grid-row: 6 / span 1;
+    }
+
+    align-content: center;
+    display: grid;
+    justify-items: start;
+    padding: 6rem 8vw;
+  }
+}
+
+/////////////////////////////////////////////////////////////
+// HOMES
+
+.section__homes {
+  grid-column: main-start / main-end;
+  padding: 15rem 0;
+  display: grid;
+  gap: 7rem 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+  @media only screen and (max-width: $width-1000) {
+    padding: 7rem 0;
+  }
+
+  @media only screen and (max-width: $width-500) {
+    gap: 4rem;
+    padding: 4rem 0;
+  }
+}
+
+/////////////////////////////////////////////////////////////
+// GALLERY
+
+.section__gallery {
+  grid-column: full-start / full-end;
+
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+  grid-template-rows: repeat(7, 5vw);
+  padding: 1.5rem;
+}
+
+/////////////////////////////////////////////////////////////
+// FOOTER
+
+.footer {
+  grid-column: full-start / full-end;
+
+  background-color: $color-secondary;
+  padding: 8rem;
+
+  @media only screen and (max-width: $width-1000) {
+    padding: 4rem;
+  }
+
+  @media only screen and (max-width: $width-800) {
+    padding: 2rem;
+  }
+}
